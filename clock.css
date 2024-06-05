@@ -1,0 +1,68 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px; /* Adjust the maximum width of the container */
+}
+
+.clock-container,
+.timers-container {
+    text-align: center;
+    border: 2px solid #61dafb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#clock {
+    font-size: 6em; /* Adjust the font size of the clock here */
+    margin-top:7%;
+    text-shadow: 0 0 5px #61dafb, 0 0 5px #61dafb;
+}
+
+.clock-container {
+    flex: 2; /* Make the clock container take up more space */
+    margin-right: 20px;
+}
+
+.timers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1; /* Make the timers container take up less space */
+    max-width: 300px; /* Optional: you can set a fixed max-width */
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.timer span:first-child {
+    text-align: left;
+}
+
+.timer span:last-child {
+    text-align: right;
+}
+
+.neon-blue {
+    color: #ffffff;
+    text-shadow: 0 0 5px #61dafb, 0 0 5px #61dafb;
+}
+
